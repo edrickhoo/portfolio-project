@@ -1,0 +1,233 @@
+#projects, .about-me {
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 30px;
+}
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.project-header {
+  background-color: rgb(33, 33, 33);
+  position: fixed;
+  width: 100%;
+}
+.project-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px;
+}
+
+.nav__list {
+  display: none;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+  }
+}
+.nav__list > li > a {
+  padding: 10px 10px;
+}
+.nav__mobile {
+  color: rgb(20, 255, 236);
+}
+@media screen and (min-width: 768px) {
+  .nav__mobile {
+    display: none;
+  }
+}
+
+.landing-page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page__text {
+  text-align: center;
+}
+
+#aboutMe {
+  background-color: rgb(13, 115, 119);
+}
+
+.about-me {
+  color: white;
+  text-align: center;
+}
+.about-me__title {
+  margin-bottom: 30px;
+}
+.about-me__title--skills {
+  margin-top: 30px;
+}
+.about-me__para {
+  line-height: 1.4;
+  font-size: 17px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .about-me__para {
+    font-size: 21px;
+  }
+}
+
+.skills {
+  display: grid;
+  place-items: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.skills__title {
+  margin-bottom: 30px;
+}
+.skills__front-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+.skills__back-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.front-end__skill--javascript {
+  fill: white;
+}
+.front-end__skill:hover {
+  scale: 120%;
+}
+
+.back-end__skill:hover {
+  scale: 125%;
+}
+.back-end__skill--sql {
+  width: 80px;
+  height: 60px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.projects__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project {
+  border: 1px solid black;
+}
+.project__btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__btn {
+  margin-right: 20px;
+}
+.project__img-container {
+  display: flex;
+  justify-content: center;
+}
+.project__img {
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+.contact__socials {
+  margin-bottom: 20px;
+}
+.contact__socials--email {
+  color: white;
+}
+.contact__socials--email:hover {
+  color: rgb(20, 255, 236);
+}
+.contact__socials--github {
+  color: white;
+}
+.contact__socials--github:hover {
+  color: rgb(20, 255, 236);
+}
+.contact__socials--linkedin {
+  color: white;
+}
+.contact__socials--linkedin:hover {
+  color: rgb(20, 255, 236);
+}
+
+.contact {
+  background-color: rgb(13, 115, 119);
+  padding: 50px 30px;
+}
+
+.contact-form {
+  text-align: right;
+  background-color: rgb(50, 50, 50);
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  color: white;
+}
+.contact-form__input-label {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.contact-form__input-label input {
+  padding: 4px 7px;
+}
+.contact-form__submit {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=output.css.map */
