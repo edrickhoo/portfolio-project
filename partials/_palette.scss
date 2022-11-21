@@ -5,3 +5,10 @@ $cyan: rgb(20, 255, 236);
 
 $desktop-para-size: 21px;
 $mobile-para-size: 17px;
+
+%page-container {
+  max-width: 1640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 30px;
+}

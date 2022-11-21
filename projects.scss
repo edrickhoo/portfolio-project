@@ -1,0 +1,44 @@
+@use "./mixins/device";
+@use "./partials/palette";
+
+#projects {
+  @extend %page-container;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  @include device.screen-md {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include device.screen-lg {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.project {
+  border: 1px solid black;
+  &__btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    margin-right: 20px;
+  }
+  &__img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 100%;
+  }
+}
