@@ -40,6 +40,7 @@
 }
 .nav__list > li > a:hover {
   color: rgb(20, 255, 236);
+  background-color: rgb(50, 50, 50);
 }
 .nav__mobile {
   color: rgb(20, 255, 236);
@@ -136,6 +137,10 @@
   max-width: 500px;
 }
 
+.front-end__skill--typescript {
+  height: 70px;
+  width: 70px;
+}
 .front-end__skill--javascript {
   height: 55px;
   width: 55px;
@@ -234,7 +239,7 @@
 }
 @media screen and (min-width: 1024px) {
   .projects {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .projects__title {

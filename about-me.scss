@@ -69,6 +69,10 @@
 
 .front-end {
   &__skill {
+    &--typescript {
+      height: 70px;
+      width: 70px;
+    }
     &--javascript {
       height: 55px;
       width: 55px;

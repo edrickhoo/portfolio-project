@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1fr;
   }
   @include device.screen-lg {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   &__title {
