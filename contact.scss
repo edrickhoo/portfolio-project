@@ -1,0 +1,78 @@
+@use "./mixins/device";
+@use "./partials/palette";
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    margin-bottom: 20px;
+
+    &--email {
+      color: white;
+
+      &:hover {
+        color: palette.$cyan;
+      }
+    }
+
+    &--github {
+      color: white;
+      &:hover {
+        color: palette.$cyan;
+      }
+    }
+
+    &--linkedin {
+      color: white;
+      &:hover {
+        color: palette.$cyan;
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: palette.$teal;
+  padding: 50px 30px;
+}
+
+.contact-form {
+  text-align: right;
+  background-color: palette.$gray;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  color: white;
+
+  &__input-label {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 10px;
+    align-items: center;
+
+    input {
+      padding: 4px 7px;
+    }
+  }
+
+  &__submit {
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: white;
+    border: 2px solid palette.$dark-gray;
+    border-radius: 8px;
+    padding: 3px 5px;
+
+    &:hover {
+      color: palette.$cyan;
+    }
+  }
+}
